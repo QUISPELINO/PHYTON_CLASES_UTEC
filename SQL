@@ -1,0 +1,185 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO7KR0191+HONtW4R7OVsrg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/QUISPELINO/PHYTON_CLASES_UTEC/blob/main/SQL\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "Uf3RE8hZ2dc-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "alumno: Saulo Quispe Lino\n",
+        "\n",
+        "#### ejercicio 1 ###\n",
+        "\n",
+        "edad=int(input())\n",
+        "\n",
+        "peso=int(input())\n",
+        "\n",
+        "if edad>40 and peso<60:\n",
+        "    print(\"necesitas aumentar de peso\")\n",
+        "elif edad<30 and peso>80:\n",
+        "    print(\"necesitas bajar de peso\")\n",
+        "else:\n",
+        "    print(\"estas saludable\") \n",
+        "\n",
+        "\n",
+        "#### ejercicio 2 ####\n",
+        "\n",
+        "cali_porcentual=int(input())\n",
+        "\n",
+        "if cali_porcentual < 60:\n",
+        "    print(\"reprobaste la clase\")\n",
+        "elif cali_porcentual >60 and cali_porcentual <70:\n",
+        "    print(\"Pasate la clase pero apenas\")\n",
+        "elif cali_porcentual>70 and cali_porcentual <90:\n",
+        "    print(\"lo hiciste bien en clase\")\n",
+        "else:\n",
+        "    print(\"excelente en clase\")\n",
+        "\n",
+        "\n",
+        "### ejercicio 3 ####\n",
+        "\n",
+        "numero1= int(input())\n",
+        "\n",
+        "numero2=int(input())\n",
+        "\n",
+        "\n",
+        "if numero1>0 and numero2>0 and (numero1+numero2)%2==0:\n",
+        "    print(\"la suma de tus numeros es par y positivo\")\n",
+        "elif ((numero1<0) or (numero2<0)) and (numero2%2>0 or numero1%2>0) :\n",
+        "    print(\"uno de tus nuemeros es negativo y el otro es impar\")\n",
+        "else: \n",
+        "    print(\"tus numero no cumple con ninguna de las condiciones\")\n",
+        "\n",
+        "### ejecicio 4 ##\n",
+        "\n",
+        "edad_n=int(input())\n",
+        "ingresos=int(input())\n",
+        "ante_penal=input()\n",
+        "if edad_n>18 and ingresos > 50000 and ante_penal==\"no\":\n",
+        "    print(\"eres elegible para el trabajo\")\n",
+        "elif ante_penal==\"si\":\n",
+        "    print(\"no eres elegible para el trabajo\")\n",
+        "else:\n",
+        "    print(\" tendremos que revizar tu solicitud\")"
+      ],
+      "metadata": {
+        "id": "GB87HwPlXTIL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def busca_numer(x):\n",
+        " cajas=[1,4,5,7,9,13]\n",
+        " for i in range (len(cajas)):\n",
+        "    if (cajas[i]==x):\n",
+        "      return True\n",
+        "    return False\n",
+        "      \n",
+        "\n",
+        "\n",
+        "print(busca_numer(9))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KmwtoQx15VUW",
+        "outputId": "87127da6-4762-4e3d-a12f-82d770121a91"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "13XJotOZCzX4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "caja=[1,2,3,4,7,9]\n",
+        "for i in range (len(caja)):\n",
+        "  if (caja[i]==x):\n",
+        "   return True\n",
+        "  else:\n",
+        "    False\n",
+        "\n",
+        " print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aNuH-dCZ4hbn",
+        "outputId": "77fa5780-ffe1-459b-b6de-8f7c3ab33f9a"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "ZBp03Hrv4hFY"
+      }
+    }
+  ]
+}
